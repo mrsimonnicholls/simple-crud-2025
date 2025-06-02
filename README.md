@@ -7,6 +7,7 @@ A minimal vanilla JavaScript CRUD app using [Supabase](https://supabase.com/) an
 ## Folder Structure
 
 ```text
+
 /simple-crud-2025
   ├── index.html
   ├── create.html
@@ -19,9 +20,6 @@ A minimal vanilla JavaScript CRUD app using [Supabase](https://supabase.com/) an
       ├── admin.js
       └── styles.css
 
-
----
-
 ## Setup
 
 1. Clone the repo or download the files.
@@ -29,6 +27,7 @@ A minimal vanilla JavaScript CRUD app using [Supabase](https://supabase.com/) an
 2. Create a `src/connection.js` file:
 
 ```js
+
 // connection.js
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
