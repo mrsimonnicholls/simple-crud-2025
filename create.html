@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Post</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script type="module" src="src/create.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Create a New Post</h1>
+        <form id="post-form">
+            <label>Week:</label>
+            <input type="number" name="week" min="1" required />
+            <label>Title:</label>
+            <input type="text" name="title" required />
+            <label>Content:</label>
+            <textarea name="content" rows="5" required></textarea>
+            <button type="submit">Publish</button>
+        </form>
+    </main>
+</body>
+
+</html>

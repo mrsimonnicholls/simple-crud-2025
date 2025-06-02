@@ -1,0 +1,16 @@
+// app.js
+import { supabase } from './connection.js'
+
+const { data, error } = await supabase
+    .from('posts')
+    .select('*')
+
+document.querySelector("#posts").innerHTML = data.map(post =>
+    `
+    <article>
+        <h2>${post.title}</h2>
+        <p>${post.content}</p>
+        <h6>Week ${post.week} - ${new Date(post.created_at).toLocaleString('en-NZ', { dateStyle: "full" })}</h6 >
+    </article>
+    `
+).join('');

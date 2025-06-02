@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+
+    & a {
+        color: inherit;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
+
+    & p {
+        font-weight: 900;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+        margin: 0;
+    }
+}
+
+/* CREATE POSTS PAGE */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+/* MANAGE POSTS PAGE */
+
+#post-list {
+    list-style-type: none;
+    padding:0;
+}
+
+#post-list li {
+    display: flex;
+    gap:1rem;
+
+}
+
+/* CSS pattern to limit length of text and add ellipsis (...) */
+.title {
+  max-width: 30ch;          
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right:auto;
+}
