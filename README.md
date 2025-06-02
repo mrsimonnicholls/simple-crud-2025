@@ -19,6 +19,7 @@ A minimal vanilla JavaScript CRUD app using [Supabase](https://supabase.com/) an
       ├── update.js
       ├── admin.js
       └── styles.css
+```
 
 ## Setup
 
@@ -35,3 +36,4 @@ const supabaseUrl = '<your URL>'
 const supabaseKey = '<your KEY>'
 
 export const supabase = createClient(supabaseUrl, supabaseKey)
+```
